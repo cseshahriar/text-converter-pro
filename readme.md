@@ -32,10 +32,10 @@ A powerful **API-based text conversion platform** where users can convert text f
 
 ## ⚙️ Tech Stack
 
-* Backend: Python (FastAPI / Django REST)
-* Database: PostgreSQL / SQLite
+* Backend: Python (FastAPI)
+* Database: SQLite
 * Auth: JWT / API Token
-* ORM: SQLAlchemy / Django ORM
+* ORM: SQLAlchemy
 
 ---
 
@@ -139,9 +139,6 @@ text-converter-pro/
 │   ├── routes/
 │   ├── services/
 │   ├── schemas/
-│   └── core/
-│
-│── migrations/
 │── requirements.txt
 │── main.py
 ```
@@ -165,8 +162,7 @@ git clone https://github.com/cseshahriar/text-converter-pro.git
 cd text-converter-pro
 
 pip install -r requirements.txt
-
-uvicorn main:app --reload
+fastapi dev app/main.py or uvicorn app.main:app --reload
 ```
 
 ---
